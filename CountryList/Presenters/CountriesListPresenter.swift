@@ -14,25 +14,36 @@ protocol CountriesListPresenterProtocol: AnyObject {
 
 class CountriesListPresenter {
     
-    typealias CountriesListView = CountriesListViewProtocol
+    typealias CountriesListView = CountriesListViewProtocol & LoaderDisplayer
     let interactor: CountriesListInteractorProtocol
+    var viewState: CountriesListViewState = CountriesListViewState()
     weak var view: CountriesListView!
+    
     
     init(interactor: CountriesListInteractorProtocol, view: CountriesListView) {
         self.interactor = interactor
         self.view = view
     }
     
+    private func updateView() {
+        view.viewState = viewState
+    }
+    
 }
 
 extension CountriesListPresenter: CountriesListPresenterProtocol {
     func loadAllCountries() {
-        interactor.loadAllCountries { result in
+        view.showLoader()
+        interactor.loadAllCountries { [weak self] result in
+            self?.view.hideLoader()
             switch result {
-            default:
+            case .success(let models):
+                self?.viewState.countriesViewState = models.map(CountryCellViewState.init)
+                self?.updateView()
+            case .failure(let error):
+                print(error)
                 break
             }
-            
         }
     }
 }

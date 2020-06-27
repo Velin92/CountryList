@@ -8,13 +8,19 @@
 
 import Foundation
 
+enum CountriesListError: Error {
+    case apiError(Error)
+    case emptyList
+}
+
 protocol CountriesListInteractorProtocol: AnyObject {
-    func loadAllCountries(completion: @escaping (Result<Void, Error>)->Void)
+    func loadAllCountries(completion: @escaping (Result<[CountryModel],  CountriesListError>)->Void)
 }
 
 class CountriesListInteractor {
     
     let apiClient: CountriesListAPIClient
+    var countries: [CountryModel] = []
     
     init(apiClient: CountriesListAPIClient) {
         self.apiClient = apiClient
@@ -23,14 +29,19 @@ class CountriesListInteractor {
 }
 
 extension CountriesListInteractor: CountriesListInteractorProtocol {
-    func loadAllCountries(completion: @escaping (Result<Void, Error>) -> Void) {
-        apiClient.getAllCountriesList { [weak self] result in
+    func loadAllCountries(completion: @escaping (Result<[CountryModel], CountriesListError>) -> Void) {
+        apiClient.getAllCountriesList { result in
             switch result {
             case .success(let response):
-                print(response)
-                completion(.success(()))
+                let countries = response.compactMap(CountryModel.init)
+                guard countries.count > 0 else {
+                    completion(.failure(.emptyList))
+                    return
+                }
+                self.countries = countries
+                completion(.success(self.countries))
             case .failure(let error):
-                completion(.failure(error))
+                completion(.failure(.apiError(error)))
             }
         }
     }

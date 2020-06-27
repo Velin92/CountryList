@@ -15,6 +15,11 @@
 		A7400D5D24A79AD00053BD42 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5C24A79AD00053BD42 /* APIClient.swift */; };
 		A7400D6124A79B820053BD42 /* CountriesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6024A79B820053BD42 /* CountriesListResponse.swift */; };
 		A7400D6424A79D000053BD42 /* JSONDecoder+decodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6324A79D000053BD42 /* JSONDecoder+decodeResponse.swift */; };
+		A7400D6724A7A2DB0053BD42 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6624A7A2DB0053BD42 /* CountryModel.swift */; };
+		A7400D6924A7A3180053BD42 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6824A7A3180053BD42 /* CurrencyModel.swift */; };
+		A7400D6B24A7A4BD0053BD42 /* CountriesListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6A24A7A4BD0053BD42 /* CountriesListViewState.swift */; };
+		A7400D6D24A7A7C80053BD42 /* LoaderDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6C24A7A7C80053BD42 /* LoaderDisplayer.swift */; };
+		A7400D6F24A7B0570053BD42 /* CountriesListTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D6E24A7B0570053BD42 /* CountriesListTableViewManager.swift */; };
 		A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF0C24A7806000A3D606 /* MainCoordinator.swift */; };
 		A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF1024A7808A00A3D606 /* Coordinator.swift */; };
 		A76866C324A7742A006BF3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C224A7742A006BF3C7 /* AppDelegate.swift */; };
@@ -59,6 +64,11 @@
 		A7400D5C24A79AD00053BD42 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A7400D6024A79B820053BD42 /* CountriesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListResponse.swift; sourceTree = "<group>"; };
 		A7400D6324A79D000053BD42 /* JSONDecoder+decodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decodeResponse.swift"; sourceTree = "<group>"; };
+		A7400D6624A7A2DB0053BD42 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		A7400D6824A7A3180053BD42 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		A7400D6A24A7A4BD0053BD42 /* CountriesListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewState.swift; sourceTree = "<group>"; };
+		A7400D6C24A7A7C80053BD42 /* LoaderDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderDisplayer.swift; sourceTree = "<group>"; };
+		A7400D6E24A7B0570053BD42 /* CountriesListTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListTableViewManager.swift; sourceTree = "<group>"; };
 		A746EF0C24A7806000A3D606 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A746EF1024A7808A00A3D606 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A76866BF24A7742A006BF3C7 /* CountryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +170,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A7400D6524A7A2BC0053BD42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7400D6624A7A2DB0053BD42 /* CountryModel.swift */,
+				A7400D6824A7A3180053BD42 /* CurrencyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A746EF0824A77FE100A3D606 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +193,8 @@
 				A76866C624A7742A006BF3C7 /* CountriesListViewController.swift */,
 				A76866C824A7742A006BF3C7 /* Main.storyboard */,
 				A7400D5724A794F00053BD42 /* CountriesTableViewCell.swift */,
+				A7400D6A24A7A4BD0053BD42 /* CountriesListViewState.swift */,
+				A7400D6E24A7B0570053BD42 /* CountriesListTableViewManager.swift */,
 			);
 			path = CountriesList;
 			sourceTree = "<group>";
@@ -199,6 +220,7 @@
 			children = (
 				A746EF1024A7808A00A3D606 /* Coordinator.swift */,
 				A7400D5124A7839C0053BD42 /* Storyboarded.swift */,
+				A7400D6C24A7A7C80053BD42 /* LoaderDisplayer.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -236,6 +258,7 @@
 		A76866C124A7742A006BF3C7 /* CountryList */ = {
 			isa = PBXGroup;
 			children = (
+				A7400D6524A7A2BC0053BD42 /* Models */,
 				A7400D6224A79C570053BD42 /* Extensions */,
 				A7400D5924A7971E0053BD42 /* Services */,
 				A746EF0F24A7807500A3D606 /* Coordinators */,
@@ -486,16 +509,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7400D6724A7A2DB0053BD42 /* CountryModel.swift in Sources */,
 				A7400D5424A785320053BD42 /* CountriesListPresenter.swift in Sources */,
 				A7400D6124A79B820053BD42 /* CountriesListResponse.swift in Sources */,
+				A7400D6D24A7A7C80053BD42 /* LoaderDisplayer.swift in Sources */,
 				A7400D5B24A7972E0053BD42 /* APIRouter.swift in Sources */,
 				A76866C724A7742A006BF3C7 /* CountriesListViewController.swift in Sources */,
 				A7400D5824A794F00053BD42 /* CountriesTableViewCell.swift in Sources */,
+				A7400D6924A7A3180053BD42 /* CurrencyModel.swift in Sources */,
 				A7400D6424A79D000053BD42 /* JSONDecoder+decodeResponse.swift in Sources */,
 				A7400D5D24A79AD00053BD42 /* APIClient.swift in Sources */,
 				A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */,
 				A7400D5624A7858F0053BD42 /* CountriesListInteractor.swift in Sources */,
+				A7400D6B24A7A4BD0053BD42 /* CountriesListViewState.swift in Sources */,
 				A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */,
+				A7400D6F24A7B0570053BD42 /* CountriesListTableViewManager.swift in Sources */,
 				A76866C324A7742A006BF3C7 /* AppDelegate.swift in Sources */,
 				A76866C524A7742A006BF3C7 /* SceneDelegate.swift in Sources */,
 				A7400D5224A7839C0053BD42 /* Storyboarded.swift in Sources */,
