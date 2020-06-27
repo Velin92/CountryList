@@ -17,6 +17,8 @@ class CountriesListViewController: UIViewController, Storyboarded {
     static let storyboardName = "Main"
     static let storyboardId = "CountriesListViewController"
     
+    @IBOutlet weak var countriesTableView: UITableView!
+    
     var presenter: CountriesListPresenterProtocol!
 
     override func viewDidLoad() {

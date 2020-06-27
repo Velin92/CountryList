@@ -10,6 +10,7 @@
 		A7400D5224A7839C0053BD42 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5124A7839C0053BD42 /* Storyboarded.swift */; };
 		A7400D5424A785320053BD42 /* CountriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5324A785320053BD42 /* CountriesListPresenter.swift */; };
 		A7400D5624A7858F0053BD42 /* CountriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5524A7858F0053BD42 /* CountriesListInteractor.swift */; };
+		A7400D5824A794F00053BD42 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5724A794F00053BD42 /* CountriesTableViewCell.swift */; };
 		A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF0C24A7806000A3D606 /* MainCoordinator.swift */; };
 		A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF1024A7808A00A3D606 /* Coordinator.swift */; };
 		A76866C324A7742A006BF3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C224A7742A006BF3C7 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		A7400D5124A7839C0053BD42 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		A7400D5324A785320053BD42 /* CountriesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListPresenter.swift; sourceTree = "<group>"; };
 		A7400D5524A7858F0053BD42 /* CountriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListInteractor.swift; sourceTree = "<group>"; };
+		A7400D5724A794F00053BD42 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
 		A746EF0C24A7806000A3D606 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A746EF1024A7808A00A3D606 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A76866BF24A7742A006BF3C7 /* CountryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 			children = (
 				A76866C624A7742A006BF3C7 /* CountriesListViewController.swift */,
 				A76866C824A7742A006BF3C7 /* Main.storyboard */,
+				A7400D5724A794F00053BD42 /* CountriesTableViewCell.swift */,
 			);
 			path = CountriesList;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			files = (
 				A7400D5424A785320053BD42 /* CountriesListPresenter.swift in Sources */,
 				A76866C724A7742A006BF3C7 /* CountriesListViewController.swift in Sources */,
+				A7400D5824A794F00053BD42 /* CountriesTableViewCell.swift in Sources */,
 				A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */,
 				A7400D5624A7858F0053BD42 /* CountriesListInteractor.swift in Sources */,
 				A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */,
