@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CountriesListPresenterProtocol: AnyObject {
-    
+    func loadAllCountries()
 }
 
 class CountriesListPresenter {
@@ -26,5 +26,13 @@ class CountriesListPresenter {
 }
 
 extension CountriesListPresenter: CountriesListPresenterProtocol {
-    
+    func loadAllCountries() {
+        interactor.loadAllCountries { result in
+            switch result {
+            default:
+                break
+            }
+            
+        }
+    }
 }

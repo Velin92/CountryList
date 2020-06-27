@@ -22,7 +22,7 @@ class MainCoordinator {
 extension MainCoordinator: Coordinator {
     
     func start() {
-        let interactor = CountriesListInteractor()
+        let interactor = CountriesListInteractor(apiClient: APIClient())
         let vc = CountriesListViewController.instantiate()
         let presenter = CountriesListPresenter(interactor: interactor, view: vc)
         vc.presenter = presenter
