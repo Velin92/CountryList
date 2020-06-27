@@ -13,7 +13,6 @@ class CountriesTableViewCell: UITableViewCell {
     @IBOutlet weak var flagImageView: UIImageView!
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var countryCapitalLabel: UILabel!
-    @IBOutlet weak var countryCurrencyName: UILabel!
     @IBOutlet weak var countryCurrencyIdentifier: UILabel!
     
 }

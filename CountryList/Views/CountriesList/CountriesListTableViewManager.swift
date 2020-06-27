@@ -28,7 +28,6 @@ extension CountriesListTableViewManager: UITableViewDataSource {
         }
         cell.countryCapitalLabel.text = dataSource[indexPath.row].capital
         cell.countryNameLabel.text = dataSource[indexPath.row].name
-        cell.countryCurrencyName.text = dataSource[indexPath.row].currencyName
         cell.countryCurrencyIdentifier.text = dataSource[indexPath.row].currencyIdentifier
         return cell
     }
