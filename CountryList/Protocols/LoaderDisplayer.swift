@@ -20,7 +20,7 @@ extension LoaderDisplayer {
             let maskView = UIView(frame: self.view.frame)
             self.view.addSubview(maskView)
             let bgView = UIView(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
-            bgView.backgroundColor = UIColor(displayP3Red: 0.9, green: 0.9, blue: 0.9, alpha: 0.6)
+            bgView.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.6)
             bgView.layer.cornerRadius = 10
             let activityView = UIActivityIndicatorView(style: .large)
             activityView.center = bgView.center

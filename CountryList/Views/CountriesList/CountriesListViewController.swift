@@ -23,6 +23,7 @@ class CountriesListViewController: UIViewController, Storyboarded, LoaderDisplay
         }
     }
     
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var countriesTableView: UITableView!
     
     var presenter: CountriesListPresenterProtocol!
@@ -37,7 +38,12 @@ class CountriesListViewController: UIViewController, Storyboarded, LoaderDisplay
         super.viewDidLoad()
         countriesTableView.delegate = tableViewManager
         countriesTableView.dataSource = tableViewManager
+        searchTextField.addTarget(self, action: #selector(searchTextDidChange(_:)), for: .editingChanged)
         presenter.loadAllCountries()
+    }
+    
+    @objc func searchTextDidChange(_ sender: UITextField) {
+        presenter.searchFilterDidChange(sender.text)
     }
 }
 

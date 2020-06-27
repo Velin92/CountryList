@@ -14,5 +14,4 @@ class CountriesTableViewCell: UITableViewCell {
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var countryCapitalLabel: UILabel!
     @IBOutlet weak var countryCurrencyIdentifier: UILabel!
-    
 }

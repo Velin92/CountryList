@@ -10,6 +10,7 @@ import Foundation
 
 protocol CountriesListPresenterProtocol: AnyObject {
     func loadAllCountries()
+    func searchFilterDidChange(_ filter: String?)
 }
 
 class CountriesListPresenter {
@@ -45,5 +46,10 @@ extension CountriesListPresenter: CountriesListPresenterProtocol {
                 break
             }
         }
+    }
+    
+    func searchFilterDidChange(_ filter: String?) {
+        self.viewState.countriesViewState = interactor.getFilteredModels(by: filter).map((CountryCellViewState.init))
+        self.updateView()
     }
 }

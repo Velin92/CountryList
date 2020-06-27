@@ -15,6 +15,7 @@ enum CountriesListError: Error {
 
 protocol CountriesListInteractorProtocol: AnyObject {
     func loadAllCountries(completion: @escaping (Result<[CountryModel],  CountriesListError>)->Void)
+    func getFilteredModels(by name: String?) -> [CountryModel]
 }
 
 class CountriesListInteractor {
@@ -29,6 +30,14 @@ class CountriesListInteractor {
 }
 
 extension CountriesListInteractor: CountriesListInteractorProtocol {
+    func getFilteredModels(by name: String?) -> [CountryModel] {
+         guard let name = name, !name.isEmpty else {return self.countries}
+               let filteredCountries = self.countries.filter { element in
+                return element.name.lowercased().starts(with: name.lowercased())
+               }
+               return filteredCountries
+    }
+    
     func loadAllCountries(completion: @escaping (Result<[CountryModel], CountriesListError>) -> Void) {
         apiClient.getAllCountriesList { result in
             switch result {
