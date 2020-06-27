@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7400D5224A7839C0053BD42 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5124A7839C0053BD42 /* Storyboarded.swift */; };
+		A7400D5424A785320053BD42 /* CountriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5324A785320053BD42 /* CountriesListPresenter.swift */; };
+		A7400D5624A7858F0053BD42 /* CountriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7400D5524A7858F0053BD42 /* CountriesListInteractor.swift */; };
+		A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF0C24A7806000A3D606 /* MainCoordinator.swift */; };
+		A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746EF1024A7808A00A3D606 /* Coordinator.swift */; };
 		A76866C324A7742A006BF3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C224A7742A006BF3C7 /* AppDelegate.swift */; };
 		A76866C524A7742A006BF3C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C424A7742A006BF3C7 /* SceneDelegate.swift */; };
-		A76866C724A7742A006BF3C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C624A7742A006BF3C7 /* ViewController.swift */; };
+		A76866C724A7742A006BF3C7 /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76866C624A7742A006BF3C7 /* CountriesListViewController.swift */; };
 		A76866CA24A7742A006BF3C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76866C824A7742A006BF3C7 /* Main.storyboard */; };
 		A76866CC24A7742B006BF3C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76866CB24A7742B006BF3C7 /* Assets.xcassets */; };
 		A76866CF24A7742B006BF3C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76866CD24A7742B006BF3C7 /* LaunchScreen.storyboard */; };
@@ -41,10 +46,15 @@
 		2B30729D85414AB43CFBFFFA /* Pods-CountryList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryList.debug.xcconfig"; path = "Target Support Files/Pods-CountryList/Pods-CountryList.debug.xcconfig"; sourceTree = "<group>"; };
 		641D3CFE7D9E67A69CDDE9B0 /* Pods-CountryListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryListTests.release.xcconfig"; path = "Target Support Files/Pods-CountryListTests/Pods-CountryListTests.release.xcconfig"; sourceTree = "<group>"; };
 		8EB404771ED2A763FF26718B /* Pods-CountryList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryList.release.xcconfig"; path = "Target Support Files/Pods-CountryList/Pods-CountryList.release.xcconfig"; sourceTree = "<group>"; };
+		A7400D5124A7839C0053BD42 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		A7400D5324A785320053BD42 /* CountriesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListPresenter.swift; sourceTree = "<group>"; };
+		A7400D5524A7858F0053BD42 /* CountriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListInteractor.swift; sourceTree = "<group>"; };
+		A746EF0C24A7806000A3D606 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A746EF1024A7808A00A3D606 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A76866BF24A7742A006BF3C7 /* CountryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76866C224A7742A006BF3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A76866C424A7742A006BF3C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A76866C624A7742A006BF3C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A76866C624A7742A006BF3C7 /* CountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
 		A76866C924A7742A006BF3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A76866CB24A7742B006BF3C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76866CE24A7742B006BF3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +116,56 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A746EF0824A77FE100A3D606 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A746EF0924A7800600A3D606 /* CountriesList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A746EF0924A7800600A3D606 /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				A76866C624A7742A006BF3C7 /* CountriesListViewController.swift */,
+				A76866C824A7742A006BF3C7 /* Main.storyboard */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		A746EF0A24A7802700A3D606 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A7400D5324A785320053BD42 /* CountriesListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A746EF0B24A7804D00A3D606 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A7400D5524A7858F0053BD42 /* CountriesListInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A746EF0E24A7806D00A3D606 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A746EF1024A7808A00A3D606 /* Coordinator.swift */,
+				A7400D5124A7839C0053BD42 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A746EF0F24A7807500A3D606 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A746EF0C24A7806000A3D606 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		A76866B624A7742A006BF3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +191,13 @@
 		A76866C124A7742A006BF3C7 /* CountryList */ = {
 			isa = PBXGroup;
 			children = (
+				A746EF0F24A7807500A3D606 /* Coordinators */,
+				A746EF0E24A7806D00A3D606 /* Protocols */,
+				A746EF0B24A7804D00A3D606 /* Interactors */,
+				A746EF0A24A7802700A3D606 /* Presenters */,
+				A746EF0824A77FE100A3D606 /* Views */,
 				A76866C224A7742A006BF3C7 /* AppDelegate.swift */,
 				A76866C424A7742A006BF3C7 /* SceneDelegate.swift */,
-				A76866C624A7742A006BF3C7 /* ViewController.swift */,
-				A76866C824A7742A006BF3C7 /* Main.storyboard */,
 				A76866CB24A7742B006BF3C7 /* Assets.xcassets */,
 				A76866CD24A7742B006BF3C7 /* LaunchScreen.storyboard */,
 				A76866D024A7742B006BF3C7 /* Info.plist */,
@@ -376,9 +439,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76866C724A7742A006BF3C7 /* ViewController.swift in Sources */,
+				A7400D5424A785320053BD42 /* CountriesListPresenter.swift in Sources */,
+				A76866C724A7742A006BF3C7 /* CountriesListViewController.swift in Sources */,
+				A746EF0D24A7806000A3D606 /* MainCoordinator.swift in Sources */,
+				A7400D5624A7858F0053BD42 /* CountriesListInteractor.swift in Sources */,
+				A746EF1124A7808A00A3D606 /* Coordinator.swift in Sources */,
 				A76866C324A7742A006BF3C7 /* AppDelegate.swift in Sources */,
 				A76866C524A7742A006BF3C7 /* SceneDelegate.swift in Sources */,
+				A7400D5224A7839C0053BD42 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
